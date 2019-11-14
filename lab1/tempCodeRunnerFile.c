@@ -1,0 +1,1 @@
+		pwr(2, numberA);
