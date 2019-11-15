@@ -3,7 +3,7 @@
 
 int control(char ssn[10]);
 void removeWhiteSpace(char *input);
-void newSsn(char *input )
+void newSsn(char *input );
 
 int main()
 {

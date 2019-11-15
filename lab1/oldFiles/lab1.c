@@ -18,7 +18,7 @@ int main()
 		printf("Enter Social Security Number: ");
  		fgets(ssn, sizeof(ssn), stdin);
 		removeWhiteSpace(ssn);
-s
+
 		check(ssn);
 /*
 		printf("Hello World\nType a Number: ");
