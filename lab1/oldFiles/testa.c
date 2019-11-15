@@ -2,7 +2,7 @@
 
 int main()
 {
-	system("cls"); //i was here
+	system("cls"); 
 	int numberA;
 	int numberB;
 
