@@ -11,6 +11,7 @@ int main()
   int handler1 = 1;
   int handler2 = 0;
   int handler3 = 0;
+  char chartemp[2];
 
   while(handler1 == 1)
   {
@@ -29,20 +30,23 @@ int main()
     {
       int temp = 0;
       temp = ssn1[i-1];
+
       switch (handler3)
-​      {
-        case 0:
-          temp = temp*2;
-          handler3 = 1;
-          break;
-        case 1:
-          handler3 = 0
-          break;
+      {
+      case 0:
+        temp = temp*2;
+        handler3 = 0;
+        break;
+      case 1:
+        handler3 = 0;
+        break;
+      default:
+        break;
       }
       
       if(temp>10)
       {
-        char chartemp[2] = temp;
+        chartemp[2] = temp;
         temp = chartemp[0] + chartemp[1];
       }
       totctrl += temp;
