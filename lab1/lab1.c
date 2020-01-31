@@ -10,7 +10,7 @@ int main()
 	system("cls");
 	char ssn[10]; //social security number (size 10 yymmddxxxx)
 	int numberA;
-	int numberB;
+	int numberB;   //oscar
 
 	while(run == 'y')
 	{
@@ -18,7 +18,7 @@ int main()
 		printf("Enter Social Security Number: ");
  		fgets(ssn, sizeof(ssn), stdin);
 		removeWhiteSpace(ssn);
-s
+
 		check(ssn);
 /*
 		printf("Hello World\nType a Number: ");
