@@ -11,12 +11,15 @@ int main()
   int handler1 = 1;
   int handler2 = 0;
   int handler3 = 0;
+  int temp2 = 0;
   char chartemp[2];
   int temp = 0;
+  int totctrl = 0;
 
   while(handler1 == 1)
   {
-    int totctrl = 0;
+    temp2 = 0;
+    totctrl = 0;
     printf("Välkommen! Ange ett personnummer:\n");
     fgets(ssn1, 12, stdin);
     removeWhiteSpace(ssn1);
@@ -36,7 +39,7 @@ int main()
       {
       case 0:
       printf("case0-");
-        temp = temp*2;
+        temp2 = temp*2;
         handler3 = 1;
         break;
       case 1:
@@ -49,12 +52,12 @@ int main()
       
       if(temp>10)
       {
-        chartemp[2] = temp;
-        temp = chartemp[0] + chartemp[1];
+        chartemp[2] = temp2;
+        temp2 = chartemp[0] + chartemp[1];
         printf("crtlover10-");
       }
       totctrl += temp;
-      printf("totctrl: %d \n", &totctrl);
+      printf("temp: %d temp2: %d totctrl: %d \n", &temp, &temp2, &totctrl);
     }
     printf("Kontrollsiffra: %d", &totctrl);
     
