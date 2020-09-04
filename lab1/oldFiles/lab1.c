@@ -10,7 +10,7 @@ int main()
 	system("cls");
 	char ssn[10]; //social security number (size 10 yymmddxxxx)
 	int numberA;
-	int numberB;
+	int numberB;   //oscar
 
 	while(run == 'y')
 	{
